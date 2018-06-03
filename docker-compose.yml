@@ -1,11 +1,9 @@
 mysql:
-  image: mysql
+  image: mysql:5.7
   ports:
     - "3306:3306"
   environment:
-    - MYSQL_USER=springuser
-    - MYSQL_PASSWORD=ThePassword
-    - MYSQL_DATABASE=db_example
-    - MYSQL_RANDOM_ROOT_PASSWORD=true
+    - MYSQL_ROOT_PASSWORD=welcome1
+    - MYSQL_DATABASE=test
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"

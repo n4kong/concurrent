@@ -18,6 +18,9 @@ public class PromotionApplied {
 	private String thaiId;
 	private String mobileNo;
 
+	public void PromotionApplied(){
+		this.numApplied = new Integer(0);
+	}
 
 	public Long getId() {
 		return id;
@@ -39,8 +42,9 @@ public class PromotionApplied {
 		return numApplied;
 	}
 
-	public void setNumApplied(Integer numApplied) {
+	public PromotionApplied setNumApplied(Integer numApplied) {
 		this.numApplied = numApplied;
+		return this;
 	}
 
 	public String getTmnId() {
